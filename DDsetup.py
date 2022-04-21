@@ -1,7 +1,83 @@
 ###Imports###
 import random
-###Standard Question Setup. Can present a multiple choice question up to 18 units in length.###
-def multich(ch1="error1", ch2="error2", ch3="error3", ch4="error4", ch5="error5", ch6="error6", ch7="error7", ch8="error8", ch9="error9", ch10="error10", ch11="error11", ch12="error12", ch13="error13", ch14="error14", ch15="error15", ch16="error16", ch17="error17", ch18="error18"):
+###Standard Question Setup. Can present a multiple choice question up to 18 units in length. It returns the name from the list that is queried.###
+def multich(list=[], ch1="error1", ch2="error2", ch3="error3", ch4="error4", ch5="error5", ch6="error6", ch7="error7", ch8="error8", ch9="error9", ch10="error10", ch11="error11", ch12="error12", ch13="error13", ch14="error14", ch15="error15", ch16="error16", ch17="error17", ch18="error18"):
+	if len(list) > 0:
+		ch1=list[0]
+	else:
+		None
+	if len(list) > 0:
+		ch1=list[0]
+	else:
+		None
+	if len(list) > 1:
+		ch2=list[1]
+	else:
+		None
+	if len(list) > 2:
+		ch3=list[2]
+	else:
+		None
+	if len(list) > 3:
+		ch4=list[3]
+	else:
+		None
+	if len(list) > 4:
+		ch5=list[4]
+	else:
+		None
+	if len(list) > 5:
+		ch6=list[5]
+	else:
+		None
+	if len(list) > 6:
+		ch7=list[6]
+	else:
+		None
+	if len(list) > 7:
+		ch8=list[7]
+	else:
+		None
+	if len(list) > 8:
+		ch9=list[8]
+	else:
+		None
+	if len(list) > 9:
+		ch10=list[9]
+	else:
+		None
+	if len(list) > 10:
+		ch11=list[10]
+	else:
+		None
+	if len(list) > 11:
+		ch12=list11[11]
+	else:
+		None
+	if len(list) > 12:
+		ch13=list[12]
+	else:
+		None
+	if len(list) > 13:
+		ch14=list[13]
+	else:
+		None
+	if len(list) > 14:
+		ch15=list[14]
+	else:
+		None
+	if len(list) > 15:
+		ch16=list[15]
+	else:
+		None
+	if len(list) > 16:
+		ch17=list[16]
+	else:
+		None
+	if len(list) > 17:
+		ch18=list[17]
+	else:
+		None
 	if ch1 !="error1":
 		print(f"A.{ch1}")
 	else:
@@ -74,9 +150,84 @@ def multich(ch1="error1", ch2="error2", ch3="error3", ch4="error4", ch5="error5"
 		print(f"R.{ch18}")
 	else:
 		None
-	choice= input(f"""
-	Select Option:""")		
-	return choice	
+	choice= input(f"""	Select Option:""")
+	if choice=='A':
+	    choice=list[0]
+	else:
+	    None
+	if choice=='A':
+	    choice=list[0]
+	else:
+	    None
+	if choice=='B':
+	    choice=list[1]
+	else:
+	    None
+	if choice=='C':
+	    choice=list[2]
+	else:
+	    None
+	if choice=='D':
+	    choice=list[3]
+	else:
+	    None
+	if choice=='E':
+	    choice=list[4]
+	else:
+	    None
+	if choice=='F':
+	    choice=list[5]
+	else:
+	    None
+	if choice=='G':
+	    choice=list[6]
+	else:
+	    None
+	if choice=='H':
+	    choice=list[7]
+	else:
+	    None
+	if choice=='I':
+	    choice=list[8]
+	else:
+	    None
+	if choice=='J':
+	    choice=list[9]
+	else:
+	    None
+	if choice=='K':
+	    choice=list[10]
+	else:
+	    None
+	if choice=='L':
+	    choice=list[11]
+	else:
+	    None
+	if choice=='M':
+	    choice=list[12]
+	else:
+	    None
+	if choice=='N':
+	    choice=list[13]
+	else:
+	    None
+	if choice=='O':
+	    choice=list[14]
+	else:
+	    None
+	if choice=='P':
+	    choice=list[15]
+	else:
+	    None
+	if choice=='Q':
+	    choice=list[16]
+	else:
+	    None
+	if choice=='R':
+	    choice=list[17]
+	else:
+	    None
+	return choice
 #Determines the stat modifier (IE: Con=15 ConMod=2).	
 def modify(modstat):
 	mod=round(((modstat-10)/2)-0.1)	
